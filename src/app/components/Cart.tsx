@@ -60,7 +60,7 @@ export default function Cart() {
                         <div>
                             <h4 className="font-semibold">{item.name}</h4>
                             <p className="text-sm text-muted-foreground">
-                                ${item.price.toFixed(2)} x {item.quantity}
+                                £{item.price.toFixed(2)} x {item.quantity}
                             </p>
                             {item.quantity >= item.number_available && (
                                 <p className="text-xs text-yellow-500 flex items-center">
@@ -94,7 +94,7 @@ export default function Cart() {
             <CardFooter className="flex-col items-stretch border-t pt-4">
                 <div className="flex justify-between mb-4">
                     <span className="font-semibold">Total:</span>
-                    <span className="font-semibold">${total.toFixed(2)}</span>
+                    <span className="font-semibold">£{total.toFixed(2)}</span>
                 </div>
                 <div className="flex gap-2">
                     <Dialog open={isClearCartDialogOpen} onOpenChange={setIsClearCartDialogOpen}>

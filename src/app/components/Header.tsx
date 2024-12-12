@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Settings, HelpCircle, LogOut, Sun, Moon, ShieldCheck, LogIn } from 'lucide-react'
+import { Settings, HelpCircle, LogOut, Sun, Moon, ShieldCheck } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import {

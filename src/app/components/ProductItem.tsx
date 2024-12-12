@@ -34,7 +34,7 @@ export default function ProductItem({ product }: { product: Product }) {
                 />
                 <div className="p-4">
                     <h3 className="font-semibold text-lg mb-1">{product.name}</h3>
-                    <p className="text-muted-foreground">${product.price.toFixed(2)}</p>
+                    <p className="text-muted-foreground">£{product.price.toFixed(2)}</p>
                     <p className="text-sm text-muted-foreground">
                         Available: {product.number_available - quantityInCart}
                     </p>
